@@ -1,0 +1,31 @@
+[debug] [2023-02-13T14:00:43.546Z] ----------------------------------------------------------------------
+[debug] [2023-02-13T14:00:43.568Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SILICON\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2023-02-13T14:00:43.575Z] CLI Version:   11.22.0
+[debug] [2023-02-13T14:00:43.579Z] Platform:      win32
+[debug] [2023-02-13T14:00:43.580Z] Node Version:  v18.14.0
+[debug] [2023-02-13T14:00:43.588Z] Time:          Mon Feb 13 2023 19:30:43 GMT+0530 (India Standard Time)
+[debug] [2023-02-13T14:00:43.592Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-13T14:00:43.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-13T14:00:43.696Z] > authorizing via signed-in user (alfez00097@gmail.com)
+[debug] [2023-02-13T14:00:58.886Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-02-13T14:00:58.890Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"thisispainful8","name":"thisispainful8"}
+[debug] [2023-02-13T14:01:01.720Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2023-02-13T14:01:01.721Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.8748737915760339504"}
+[debug] [2023-02-13T14:01:01.732Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 [none]
+[debug] [2023-02-13T14:01:03.897Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 200
+[debug] [2023-02-13T14:01:03.898Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 {"name":"operations/cp.8748737915760339504","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2023-02-13T14:01:04.413Z] [Project Creation Poller] Retrying task index 0
+[debug] [2023-02-13T14:01:04.417Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 [none]
+[debug] [2023-02-13T14:01:06.460Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 200
+[debug] [2023-02-13T14:01:06.461Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8748737915760339504 {"name":"operations/cp.8748737915760339504","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"637465537260","projectId":"thisispainful8","lifecycleState":"ACTIVE","name":"thisispainful8","createTime":"2023-02-13T14:00:48.783Z"}}
+[debug] [2023-02-13T14:01:06.476Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/thisispainful8:addFirebase [none]
+[debug] [2023-02-13T14:01:08.054Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/thisispainful8:addFirebase 403
+[debug] [2023-02-13T14:01:08.055Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/thisispainful8:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-02-13T14:01:08.062Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-02-13T14:01:08.586Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\SILICON\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\SILICON\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
