@@ -30,11 +30,11 @@ body {
     ===================================*/
 
 .logo-custom {
-    max-height: 40px;
+    max-height: 50px;
 }
 
 #menu {
-    background-color: rgba(28, 43, 75, 1);
+    background-color: rgba(112, 26, 199, 1);
     color: #fff;
     font-size: 16px;
     font-weight: 900;
@@ -68,7 +68,7 @@ body {
 }
 
     .home-sec .overlay {
-        background: rgba(38, 57, 88, 0.89);
+        background: rgba(147, 83, 202, 0.60);
         min-height: 500px;
     }
 
@@ -116,7 +116,7 @@ body {
         font-size: 18px;
         font-weight: 900;
         padding: 5px 10px 10px 5px;
-        color: #005E5A;
+        color:  rgb(112, 26, 199) ;
     }
 
         .tag-line h2 > i {
@@ -136,7 +136,7 @@ body {
 
 h1::after {
     content: " ";
-    border: solid 2px #2f9484;
+    border: solid 2px rgb(112, 26, 199);
     display: block;
     width: 200px;
     margin: 12px auto;
@@ -154,8 +154,8 @@ h1::after {
 }
 
 .icon-round-border {
-    border: 10px double #1A94C4;
-    color: #2f9484;
+    border: 10px double rgb(112, 26, 199);
+    color: rgb(147, 83, 202);
     text-align: center;
     padding-top: 15px;
     height: 100px;
@@ -171,7 +171,7 @@ h1::after {
     .icon-round-border:hover {
         color: #fff;
         border: 10px double #fff;
-        background-color: #1A94C4;
+        background-color: rgb(112, 26, 199);
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
@@ -179,7 +179,7 @@ h1::after {
     }
 
 .about-div hr {
-    border: 1px solid #1A94C4;
+    border: 1px solid rgb(112, 26, 199);
 }
 
 .about-div h3 {
@@ -220,7 +220,7 @@ h1::after {
 }
 
     .faculty-div hr {
-        border: 1px solid #1A94C4;
+        border: 1px solid rgb(112, 26, 199);
     }
 
     .faculty-div h3 {
@@ -235,7 +235,7 @@ h1::after {
     }
 
     .faculty-div img {
-        border: 10px double #fff;
+        border: 10px double rgb(112, 26, 199);
     }
     .alert{
         display: none;
@@ -274,7 +274,7 @@ h1::after {
   ===================================*/
 #footer {
     padding:5px 20px;
-    background-color:#2d3d5a;
+    background-color:rgb(147, 83, 202);
     text-align:right;
     color:#fff;
     font-size:15px;
