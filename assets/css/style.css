@@ -19,7 +19,7 @@ body {
 }
 
 .set-pad {
-    padding-top:35px;
+    padding-top:40px;
 }
 .set-row-pad {
     padding-top:30px;
@@ -30,7 +30,8 @@ body {
     ===================================*/
 
 .logo-custom {
-    max-height: 50px;
+    margin-top: 3px;
+    max-height: 35px;
 }
 
 #menu {
